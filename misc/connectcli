@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "Note 11 and 16 will be NameNode/server client"
+printf "Please enter the client you want to connect (12, 13, 14, 15, 16, 17, 19)"
+
+read -p ": " last_digit
+
+gConnectSSH=$(printf "192.168.110.${last_digit}")
+
+ssh ${gConnectSSH}
+
+#ssh 192.168.110.13
+
+exit 0
